@@ -24,6 +24,11 @@ node ./bin/cli.js <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
 ## Transforms
 
 <!--TRANSFORMS_START-->
+* [add-exact-prop](transforms/add-exact-prop/README.md)
+* [create-hash-history](transforms/create-hash-history/README.md)
+* [hash-router](transforms/hash-router/README.md)
+* [rename-imports](transforms/rename-imports/README.md)
+* [wrap-with-switch](transforms/wrap-with-switch/README.md)
 <!--TRANSFORMS_END-->
 
 ## Contributing
