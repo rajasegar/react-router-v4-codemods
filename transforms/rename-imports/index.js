@@ -1,6 +1,5 @@
 module.exports = function transformer(file, api) {
-
-		const j = api.jscodeshift;
+  const j = api.jscodeshift;
 
   const root = j(file.source);
 
@@ -12,8 +11,7 @@ module.exports = function transformer(file, api) {
       path.value.source.value = 'react-router-dom';
     });
 
-		return root.toSource({ quote: 'single' });
-		
+  return root.toSource({ quote: 'single' });
 };
 
 module.exports.type = 'js';

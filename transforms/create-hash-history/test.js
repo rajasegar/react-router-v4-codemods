@@ -2,7 +2,7 @@
 
 const { runTransformTest } = require('codemod-cli');
 
-runTransformTest({ 
+runTransformTest({
   name: 'create-hash-history',
   path: require.resolve('./index.js'),
   fixtureDir: `${__dirname}/__testfixtures__/`,

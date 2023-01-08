@@ -14,7 +14,11 @@ module.exports = function transformer(file, api) {
         j.jsxClosingElement(j.jsxIdentifier('Switch')),
         children
       );
-      path.value.children = [j.jsxText('\n  '), newEl, j.jsxText('\n  ')];
+
+      const hasSwitch = root.findJSXElements('Switch').length > 0;
+      if (!hasSwitch) {
+        path.value.children = [j.jsxText('\n  '), newEl, j.jsxText('\n')];
+      }
     });
 
   return root.toSource();

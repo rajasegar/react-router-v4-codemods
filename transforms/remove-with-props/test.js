@@ -3,7 +3,7 @@
 const { runTransformTest } = require('codemod-cli');
 
 runTransformTest({
-  name: 'wrap-with-switch',
+  name: 'remove-with-props',
   path: require.resolve('./index.js'),
   fixtureDir: `${__dirname}/__testfixtures__/`,
 });
