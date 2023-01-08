@@ -10,8 +10,17 @@
   },
   "bin": "./bin/cli.js",
   "keywords": [
+		"react-router",
+		"codemods",
+		"react",
     "codemod-cli"
   ],
+	"author": "Rajasegar Chandran",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajasegar/react-router-v4-codemods"
+  },
+  "license": "MIT",
   "dependencies": {
     "codemod-cli": "^3.2.0"
   },
